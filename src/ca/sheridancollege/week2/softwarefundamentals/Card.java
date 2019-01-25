@@ -16,6 +16,13 @@ public class Card {
     public Card(String suit, int value) {
         this.suit = suit;
         this.value = value;
+        if (suit.equalsIgnoreCase("Hearts")||suit.equalsIgnoreCase("spades")
+                ||suit.equalsIgnoreCase("diamond")||suit.equalsIgnoreCase("clubs")){
+            System.out.println("Plese enter hearts,  spades or diamond");
+        }
+        if (value<1 && value>13) {
+            System.out.println("Plese enter the value from 1 to 13 ");
+    }
     }
 
     /**
